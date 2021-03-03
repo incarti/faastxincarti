@@ -14,6 +14,7 @@ Ease of uptake through a standardized platform providing quick entry to the cryp
 
 <h3>Running</h3>
 
+<code>npm install local-web-server</code>
 
 <code>npm install</code>
 
