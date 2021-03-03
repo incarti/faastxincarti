@@ -1,10 +1,15 @@
 # faastxincarti
 
+<h1>UOA-Crypto</h1>
+
 <hr>
 
 See https://github.com/go-faast/faast-web for original app, this is a clone angled at providing UOA student a simple platform for sending/recieving/swapping coins. 
 Built with react. Integration with browser and hardware wallets.
 
+<h3>Purpose</h3>
+
+Ease of uptake through a standardized platform providing quick entry to the crypto area to newcomers.
 
 
 <h3>Running</h3>
