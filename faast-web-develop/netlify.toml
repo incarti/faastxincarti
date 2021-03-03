@@ -1,0 +1,89 @@
+# Netlify global settings applied to the whole site.  
+# 
+# “base” is the directory to change to before starting build. If you set base:
+#        that is where we will look for package.json/.nvmrc/etc, not repo root!
+# “command” is your build command.
+# “publish” is the directory to publish (relative to the root of your repo).
+
+[build]
+  command = "npm run build"
+  publish = "dist/"
+  functions = "build/lambda"
+  [build.environment]
+    NETLIFY = "true"
+    NODE_ENV = "production"
+
+[context.production]
+  [context.production.environment]
+    DEPLOY_ENV = "production"
+    SITE_ROOT = "https://faa.st"
+
+[context.staging]
+  [context.staging.environment]
+    DEPLOY_ENV = "staging"
+    SITE_ROOT = "https://staging.faast.us"
+    API_URL = "https://testapi.faa.st"
+
+[context.develop]
+  [context.develop.environment]
+    DEPLOY_ENV = "develop"
+
+### Main single page app
+
+[[redirects]]
+  from = "/app/*"
+  to = "/app/index.html"
+  status = 200
+
+### Path aliases for convencience
+
+[[redirects]]
+  from = "/portfolio/*"
+  to = "/app/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/swap/*"
+  to = "/app/swap/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/affiliates/*"
+  to = "/app/affiliates/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*"
+  to = "https://medium.com/faast/:splat"
+  status = 301
+
+### Path aliases for convencience
+[[redirects]]
+  from = "/knowledge/*"
+  to = "https://faast-kb-prod.herokuapp.com/knowledge/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*/what-is-an-ico"
+  to = "/knowledge/article/what-is-the-difference-between-an-ico-ito-and-ipo"
+  status = 200
+
+[[redirects]]
+  from = "/*/what-are-smart-contracts"
+  to = "/knowledge/article/what-are-smart-contracts"
+  status = 200
+
+[[redirects]]
+  from = "/*/what-is-a-dao"
+  to = "/knowledge/article/what-is-a-dao"
+  status = 200
+
+[[redirects]]
+  from = "/*/what-is-ethereum"
+  to = "/knowledge/article/what-is-ethereum"
+  status = 200
+
+[[redirects]]
+  from = "/*/what-is-an-ico"
+  to = "/knowledge/article/what-is-an-ico"
+  status = 200

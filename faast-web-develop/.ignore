@@ -1,0 +1,8 @@
+*.min.js
+*.*.min.js
+*.*.map
+*.min.css
+*.svg
+res/
+dist/
+dist-dev/

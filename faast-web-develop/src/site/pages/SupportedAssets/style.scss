@@ -1,0 +1,38 @@
+.whiteCard {
+  background-color: #fff !important;
+}
+
+.table {
+  background-color: #fff !important;
+}
+
+.thColor {
+  color: #444;
+}
+
+.table tbody tr {
+  background-color: #fff !important;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #F8F8F9 !important;
+}
+
+.table tbody tr:hover {
+  background-color: #fcfdff !important;
+}
+
+.table tbody tr td  {
+  border-color: #F3F5F8;
+}
+
+.customHover {
+  transition: all .15s ease-in-out;
+  opacity: 1;
+  filter: brightness(1);
+
+  &:hover {
+    filter: brightness(1.1);
+    text-decoration: none !important;
+  }
+}

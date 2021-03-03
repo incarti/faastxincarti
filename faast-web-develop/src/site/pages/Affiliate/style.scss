@@ -1,0 +1,57 @@
+.ctaContainer {
+  background-color: #26282D;
+  max-width: 1075px !important;
+  border-radius: 4px;
+  min-height: 130px;
+}
+
+.numbers {
+  display: inline-block;
+  border: 1px groove #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+}
+
+.numbersGreen {
+  display: inline-block;
+  border: 1px solid #00C7B6;
+  background-color: #00C7B6;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+}
+
+.input {
+  box-shadow: 0 4px 8px 0px rgba(128, 145, 184, 0.29);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  position: relative;
+  color: #50565f;
+  background-color: #e9edf5;
+  i {
+    position: absolute;
+    right: 16px;
+    top: 18px;
+    font-size: 14px;
+    color: #00C7B6;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .whyUseFast {
+    margin-top: 200px;
+  }
+  .input {
+    i {
+      display: none;
+    }
+  }
+}
