@@ -10,9 +10,6 @@ Built with react. Integration with browser and hardware wallets.
 <h3>Running</h3>
 
 
-
-npm install
-
 <code>npm install</code>
 
 <code>npm run dev</code>
